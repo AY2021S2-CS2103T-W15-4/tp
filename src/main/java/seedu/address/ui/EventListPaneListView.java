@@ -12,7 +12,7 @@ import seedu.address.model.event.Event;
 
 
 /**
- * Panel containing the list of persons.
+ * Panel containing the list of events.
  */
 public class EventListPaneListView extends UiPart<Region> {
     private static final String FXML = "EventListPaneKanbanView.fxml";
@@ -46,7 +46,7 @@ public class EventListPaneListView extends UiPart<Region> {
                 setGraphic(null);
                 setText(null);
             } else {
-                setGraphic(new EventCardKanbanView(event, event.getIdentifier()).getRoot());
+                setGraphic(new EventCardListView(event, event.getIdentifier()).getRoot());
             }
         }
     }
